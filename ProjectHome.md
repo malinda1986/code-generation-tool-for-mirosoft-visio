@@ -1,0 +1,1 @@
+This application generate java  source code for visio class diagram

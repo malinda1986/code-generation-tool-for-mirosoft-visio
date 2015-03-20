@@ -1,0 +1,570 @@
+Auto Code Generation tool for
+Microsoft Visio
+
+Project Proposal Report  
+
+
+
+
+
+
+
+B. Sc. in Management and Information Technology – 2006/2007
+Department of Industrial Management
+Faculty of Science
+University of Kelaniya
+Sri Lanka
+
+
+
+Student Number: IM/2006/042
+Name:Malinda Ranasingh
+
+1. Introduction……………………………………………….03
+	1.1 Software Development Process……………………………………...03
+		1.1.1 Process Activities/Steps…………………………………………………03
+	1.2 Software development Methodologies……………………………....05
+		1.2.1 Structured System Analysis and Design………………………………...05
+		1.2.2 Object oriented system analysis and design………………………….….06
+
+	1.3 Role of the Unified Modeling Language in OOAD Methodology…..08
+		1.3.1 UML goals……………………………………………………………….08
+		1.3.2 The most useful, standard UML diagrams ……………………………...08
+		1.3.3 The ways of converting design to a program code………………………09
+	1.4 Microsoft Visio……………………………………………………….11
+		1.4.1 Visio Versions……………………………………………………………12
+		1.4.2 Native file Formats……………………………………………………....12
+		1.4.3 Features of MS Visio…………………………………………………….13
+		1.4.4 Visio and auto code generation…………………………………………..16
+	1.5 Scope of the Project……………………………………………..……17
+		1.5.1 Aims and Objective………………………………………………………18
+		1.5.2 Weakness of the current system………………………………………….19
+		1.5.2 Advantages of proposed System…………………………………………20
+	1.6 Software Requirement Specification……………………………..…...21
+	1.7 Diagrams……………………………………………..……………….22
+		1.7.1Use case Diagrams…….………………………………………………….23
+		1.7.2Usecase Discriptions………………………………………………...……24
+		1.7.3Activity Diagrams………………………………………………………26
+	References……………………………………………………………….27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Introduction 
+1.1Software Development Process.
+
+A software development process is a structure imposed on the development of a software product. This session introduces several models for such processes, each describing approaches to a variety of tasks or activities that take place during the process.
+
+
+1.1.1 Process Activities/Steps.
+
+Software Engineering processes are composed of many activities, notably the following
+
+Requirements Analysis and Specification[1].
+
+The most important task in creating a software product is extracting the requirements. Customers typically know what they want, but not what software should do, while incomplete, ambiguous or contradictory requirements are recognized by skilled and experienced software engineers. Frequently demonstrating live code may help reduce the risk that the requirements are incorrect.
+
+Specification is the task of precisely describing the software to be written, in a mathematically rigorous way. In practice, most successful specifications are written to understand and fine-tune applications that were already well-developed, although safety-critical software systems are often carefully specified prior to application development. Specifications are most important for external interfaces that must remain stable.
+
+Design and Implementation[1].
+
+Partition the requirements to hardware or software systems. Establishes overall system architecture. The architecture of a software system refers to an abstract representation of that system. Architecture is concerned with making sure the software system will meet the requirements of the product, as well as ensuring that future requirements can be addressed. The architecture step also addresses interfaces between the software system and other software products, as well as the underlying hardware or the host operating system.
+Represent the software system functions in a form that can be transformed into one or more executable programs. Specification is the task of precisely describing the software to be written, possibly in a rigorous way. In practice, most successful specifications are written to understand and fine-tune applications that were already well-developed, although safety-critical software systems are often carefully specified prior to application development. Specifications are most important for external interfaces that must remain stable.
+
+Implementation (or coding): Reducing a design to code may be the most obvious part of the software engineering job, but it is not necessarily the largest portion. An important (and often overlooked) task is documenting the internal design of software for the purpose of future maintenance and enhancement. Documentation is most important for external interfaces.
+
+Validation[1]
+The software must be ensure that it does what the customer wants
+
+Maintenance[1]
+Maintaining and enhancing software to cope with newly discovered problems or new requirements can take far more time than the initial development of the software. Not only may it be necessary to add code that does not fit the original design but just determining how software works at some point after it is completed may require significant effort by a software engineer. About 60% of all software engineering work is maintenance, but this statistic can be misleading. A small part of that is fixing bugs. Most maintenance is extending systems to do new things, which in many ways can be considered new work.
+
+
+
+
+
+
+
+
+
+
+1.2  Software development Methodologies.
+
+1.2.1 Structured System Analysis and Design.
+
+SSADM has been traditionally used for the development of medium or large systems. SSADM starts from defining the information system strategy and then develops a feasibility study module. These are followed by requirements analysis, requirements specification, logical system specification and a final physical system design.
+
+
+SSADM uses a combination of three techniques
+
+Logical Data Modeling -the process of identifying, modeling and documenting the data requirements of the system being designed. The data is separated into entities (things about which a business needs to record information) and relationships (the associations between the entities) [3].
+Data Flow Modeling -the process of identifying, modeling and documenting how data moves around information system. Data Flow Modeling examines processes (activities that transform data from one form to another), data stores (the holding areas for data), external entities (what sends data into a system or receives data from a system, and data flows (routes by which data can flow) [3].
+Entity Behavior Modeling - the process of identifying, modeling and documenting the events that affect each entity and the sequence in which these events occur [3].
+
+SSADM application development projects are divided into five modules that are further broken down into a hierarchy of stages, steps and tasks:[10]
+1. Feasibility Study - the business area is analyzed to determine whether a system can cost effectively support the business requirements.
+2. Requirements Analysis - the requirements of the system to be developed are identified and the current business environment is modeled in terms of the processes carried out and the data structures involved.
+3. Requirements Specification -detailed functional and non-functional requirements are identified and new techniques are introduced to define the required processing and data structures.
+4. Logical System Specification - technical systems options are produced and the logical design of update and enquiry processing and system dialogues.
+5. Physical Design - a physical database design and a set of program specifications are created using the logical system specification and technical system specification.
+
+Advantages of SSADM Methodology [9].
+
+1. Different views of the system.
+2. Well-defined techniques and documentation.
+3. Separation of logical and physical aspects of the system, so that a better view of the system can be got.
+
+Drawbacks of SSADM Methodology [9].
+1. SSADM puts special emphasis on the analysis of the system and its documentation. This causes the danger of over-analyzing, which can be very time and cost consuming.
+2.  Especially for large systems, the outline diagram can become very unclear.
+3. As it is not iterative, it is sequential; changes are not easily implemented, so it's not flexible. If requirements changes have to restart the entire process.
+4. Since SSAD is process-oriented, it ignores the non-functional requirements.
+5. There is less direct management involvement in SSAD.
+6. In SSAD there is some but not enough user/analyst interaction.
+
+
+1.2.2 Object oriented system analysis and design.
+The OOAD methodology uses an object-oriented perspective rather than a functional perspective as in the SSAD methodology. An object is a person, place or thing initially drawn from the problem domain which has three aspects to it: what it knows (its identity and certain attributes), who it knows (relationships to other objects) and what it does (its methods it is responsible for performing on its data). Object-oriented analysis is the process of developing an object-oriented model of the problem domain where the initial objects represent the entities and methods related to the problem that needs to be resolved. Object-oriented design is the process of developing an object-oriented model of the system necessary to meet the specified requirements. So in this methodology we think in terms of things (objects) rather than functions [4].
+Advantages of OOAD
+1. Programmatic objects map naturally to real-world objects (then it is easy to understand the problem) [4].
+2. OOAD significantly simplifies the development of the system compared to SSAD [4].
+3. In comparison to SSAD, the development time, the level of organization, the robustness, and the code reuse are all greatly enhanced by the OOAD methodology.
+4. In OOAD there is no separation between the analysis and design phases, which improves communication between the users from beginning to end of project development.
+5. In OOAD the software is resilient to change, resulting in a higher level of confidence in the correctness of the software which helps to reduce the risks in developing complex systems [4].
+6. OOAD enables the standardization of objects which increases design understanding and decreases the risk associated with project development.
+7. Object decomposition enables the analyst to break down the problem into independent and manageable parts. Many times the work shifts from developing new code to bringing together existing objects in creative ways to solve the problem. Thus OOAD methodology cuts down development time and costs which will stimulate and induce market and competitive advantage. This results in a very flexible, easily changed and more maintainable system [4].
+
+Drawbacks of the OOAD
+1. In OOAD there tends to be much more focus on code than in SSADM [4].
+2. In OOAD it is not an easy task to determine all the necessary classes and objects needed for the system [4].
+
+
+
+
+
+
+
+1.3 Role of the Unified Modeling Language (UML) in OOAD Methodology
+In SSADM approach use different types of diagrams to describe the process and the system. In OO world use Unified Modeling Language (UML) draws different types of diagrams to describe the process and the system.
+UML is not a methodology, it does not require any formal work products .Yet it does provide several types of diagrams that, when used within a given methodology, increase the ease of understanding an application under development. 
+1.3.1 UML goals
+Provide users a ready-to-use, expressive visual modeling language so they can develop and exchange meaningful models.
+Enable the modeling of systems (and not just software) using object-oriented concepts.
+Provide extensibility and specialization mechanisms to extend the core concepts.
+Be independent of particular programming languages and development processes.
+Provide a formal basis for understanding the modeling language.
+Support higher-level development concepts such as collaborations, frameworks, patterns, and components.
+Integrate best practices.
+Create a modeling language usable by both humans and machines.
+
+1.3.2 The most useful, standard UML diagrams 
+Use case diagram- A use case illustrates a unit of functionality provided by the system. The main purpose of the use-case diagram is to help development teams visualize the functional requirements of a system, including the relationship of "actors" (human beings who will interact with the system) to essential processes, as well as the relationships among different use cases [1].
+Class diagram- The class diagram shows how the different entities (people, things, and data) relate to each other; in other words, it shows the static structures of the system. A class diagram can be used to display logical classes. Class diagrams can also be used to show implementation classes, which are the things that programmers typically deal with. 
+ Sequence diagram- Sequence diagrams show a detailed flow for a specific use case or even just part of a specific use case. They are almost self explanatory; they show the calls between the different objects in their sequence and can show, at a detailed level, different calls to different objects [1].
+ State chart diagram- The state chart diagram models the different states that a class can be in and how that class transitions from state to state [1].
+Activity diagram- Activity diagrams show the procedural flow of control between two or more class objects while processing an activity [1].
+Component diagram- A component diagram provides a physical view of the system. Its purpose is to show the dependencies that the software has on the other software components (e.g., software libraries) in the system [1].
+Deployment diagram- The deployment diagram shows how a system will be physically deployed in the hardware environment [1].
+
+1.3.3 The ways of converting design to a program code.
+Up to design step of the software development process most of the activities deal with paper works and designing tools. After that developers move to coding part. 
+Most common and mostly use way is code by hand at the beginning. But there are some tools are available to generate the initial code (ex. Classes and some variables and functions) and it can provide the executable application (it doesn’t include all functionalities of the system) at the beginning. 
+There are lots of commercial and non commercial tool are available to generate code using modeling languages. Following table shows few selected tools, their main features and some drawbacks.
+
+C
+O
+M
+M
+E
+R
+C
+I
+A
+L
+Name
+Features
+Drawbacks
+
+XMLSpy
+(Developed by Altova)
+         1. Generate class definitions corresponding to all declared elements or complex types that redefine any complex type in given XML Schema.
+
+       2.Support for Java, C++, and Microsoft C# 
+         3. Output code is completely customizable via a simple yet powerful template language that gives full control in mapping XML Schema built-in data-types to the primitive data types of a particular programming language.
+
+      4. The code and customize according to company's writing conventions.
+
+     5. Can use different base libraries such as Microsoft Foundation Classes (MFC) and Standard Template Library (STL).
+
+    6. Generation of project files for Borland C# Builder and other third party IDEs including MONO.
+        1. Commercial Product and trial version available for limited time period and it doesn’t include all features.
+
+       2. Doesn’t focus on specific modeling tool.
+
+Visio Enterprise Edition.
+(Developed by Microsoft)
+  1. Generate skeleton code in VB, C#, or C++ languages.
+  2. Easy to use.
+         1. Commercial Product.
+        2. This features come only with Enterprise Edition.
+
+N
+O
+N
+C
+O
+M
+M
+E
+R
+C
+I
+A
+L
+AndroMDA
+(http://www.andromda.org/)
+
+       1. Takes a UML model from a CASE-tool and generates classes and deployable components (J2EE).
+       2.OS Independent (Written in an interpreted language)
+
+       1. Doesn’t focus on specific modeling tool.
+     2. support few languages.
+
+MagicDraw
+(http://www.magicdraw.com/)
+
+       1. Support for Java, C#, C++, CORBA.
+
+        2. MagicDraw generates package dependency diagrams, recover and display inheritance trees, or track any other kind of relation as a method parameter or a return value, such as dependencies, associations, realizations, and class usagedesign database schema in UML class diagram, then generate it's DDL code.
+
+     3.MagicDraw runs on a wide variety of operating systems, such as Windows 98/ME/NT/2000/XP, Solaris, OS/2, Linux, HP-UX, AIX, MacOS (X) and everywhere else where Java 1.4 is supported.
+
+     1. Doesn’t focus on specific modeling tool.
+     2. Support few languages.
+Table 1: Mostly use code generation tools
+
+1.4 Microsoft Visio 
+	Microsoft Visio, marketed as Microsoft Office Visio, is a diagramming program for Microsoft Windows that uses vector graphics to create diagrams. It is currently available in two editions: Standard and Professional.
+The Standard and Professional editions both share the same interface, but the Professional has additional templates for more advanced diagrams and layouts as well as unique functionality that makes it easy for users to connect their diagrams to a number of data sources and display the information graphically.
+
+
+1.4.1 Visio Versions [11]
+Visio 1.0 (Standard, Lite, Home)
+Visio 2.0
+Visio 3.0
+Visio 4.0 (Standard, Technical)
+Visio 4.1 (Standard, Technical)
+Visio 4.5 (Standard, Professional, Technical)
+Visio 5.0 (Standard, Professional, Technical)
+Visio 2000 (6.0; Standard, Professional, Technical, Enterprise), later updated to SP-1 and Microsoft branding after Visio Corporation's acquisition
+Visio 2002 (10.0; Standard, Professional)
+Visio Enterprise Network Tools, Visio Network Center
+Visio for Enterprise Architects 2003 (VEA 2003) (based on Visio 2002 and included with Visual Studio .NET 2003 Enterprise Architect)
+Office Visio 2003 (11.0; Standard, Professional)
+Office Visio for Enterprise Architects 2005 (VEA 2005) (based on Visio 2003 and included with Visual Studio 2005 Team Suite and Team Architect editions)
+Office Visio 2007 (12.0; Standard, Professional).
+Office Visio 2010 (14.0; Upcoming Version, Currently in Beta)
+
+1.4.2 Native files Formats [11]
+VSD – Diagram
+VSS - Stencil
+VST - Template
+VDX - Visio XML Diagram
+VSX - Visio XML Stencil
+VTX - Visio XML Template
+VSL - Visio add-on
+1.4.3 Features of MS Visio[8]
+Block diagrams
+With these drawing templates, business professionals can create a wide range of diagrams to assist in understanding and planning concepts, systems, and processes that are hierarchical, contain subset and superset relationships, include simple data flows and interactions, and depict data structures .
+Brainstorming
+Brainstorming is an effective method for generating ideas and creatively solving problems. It can help in developing systems of related ideas or information, such as new business strategies, book outlines, meeting minutes, or travel plans. A brainstorming diagram shows the interrelationships among topics in a hierarchy and can be thought of as a graphical illustration of a text outline.
+Business Process
+Business Process diagrams provide templates and tools to create common business graphics to analyze and communicate complex systems including conceptual charts, decision trees, flow diagrams, process and procedural charts, and time and activity charts. Many of the activities in Six Sigma quality improvement initiatives and ISO 9000 documentation can be presented with the diagrams in this category .
+Charts and Graphs
+The Charts and Graphs template provides ready-made shapes for graph elements, such as x-axis, y-axis, normal curve, and exponential curve shapes, so that they can easily be included in documents and presentations. The Charts and Graphs template can be used to create bar graphs, line graphs, pie charts, and graphs with special effects .
+Marketing Charts and Diagrams
+The Marketing Charts and Diagrams template can be used to create drawings for process modeling, benchmarking, simulation and improvement, path routing, time and cost analysis, activity-based costing, product portfolios, scope and marketing mix, product life and adoption cycles, market and resource analysis, and pricing matrices.
+Flowchart
+Flowchart templates can be used to illustrate or diagram complex business processes. Basic flowcharts can be used for top-down diagrams, information-tracking diagrams, process-planning diagrams, and structure-prediction diagrams. Audit diagrams are available for auditing accounting processes, financial management, fiscal information tracking, money management, and decision flowcharts. Cause and Effect, Cross-Functional, Total Quality Management (TQM), Work Flow, and Data Flow are among diagram types available in Flowchart templates .
+Map
+Directional map shapes — including clearly identifiable roadways, bus lines, and landmarks — can be used to create easy-to-read maps and route directions. Directional maps also include graphics of bridges, trees, rivers, houses, buildings, and road signs to make drawings more appealing and detailed. Three-dimensional (3-D) directional maps can be used to illustrate small geographic areas, such as villages or towns, using colorful, 3-D shapes .
+Organizational Chart
+Organizational charts can be used to graphically represent relationships among people, operations, functions, and activities in organizational hierarchies. The Organizational Chart template can be used to automatically create a hierarchy by dragging staff shapes on top of manager shapes, including graphics and customizable text fields with shapes, and by showing additional reporting relationships using dotted-line connectors and more. A wizard can also be used to generate organizational charts from personnel data stored in data files, making it easy to keep the charts up to date .
+Project Schedule
+A number of diagrams in Visio — including calendars, and Gantt and program evaluation and review technique (PERT) charts — can be used to plan and manage projects in an organization. The Visio  calendar has graphics and color schemes, associated tasks and appointments, and a rich stencil of Calendar Art shapes for embellishment. Gantt charts can be created for project management, task management, schedules, timetables, agendas, project life cycles, and goal setting. PERT charts can be created for organizing tasks and establishing timeframes, as well as for showing dependent tasks .
+Timeline
+The Timeline diagram can be used to quickly create horizontal or vertical timelines that illustrate milestones and intervals over the life of a project or process. Visio timelines can display intervals of years, quarters, months, weeks, days, hours, minutes, and seconds .
+Building Engineering
+Visio  can be used to create building maps from any electronic image and Visio Space shapes tagged with a room number. Building maps can be used as a format to report building-wide data, a method to arrange furniture and equipment, and create and maintain seating charts. Enhancements have made it easier to create building plans — from single room plans using enhanced Room shapes to full floor plans using the new Space Plan start-up wizard .
+Database
+Visio  provides specific solutions for Database diagrams that support the IDEF1X modeling technique, relational notations, object-relationship models, entity-level and schema-level diagrams, and product data models using EXPRESS-G notation. Diagrams can be created by dragging shapes to a drawing page or by reverse engineering an existing database structure from a variety of compatible databases, including Microsoft SQL Server, Microsoft Access, Oracle, and IBM's DB2.
+Electrical Engineering
+The Electrical Engineering (EE) shapes in Visio Professional 2003 have been updated to enable easier diagram creation and to better support international EE symbol standards .
+Mechanical Engineering
+Visio 2003 provides two distinct templates for mechanical engineering: the Fluid Power diagram and the Part & Assembly diagram. The Fluid Power diagram enables rapid design and prototyping of hydraulic and pneumatic actuated systems, using mechanical and electronic controls. The Part & Assembly diagram supports creation of custom geometry as used in a technical drawing, with accurate and precise geometry; it is fully dimensioned and annotated as needed to communicate a design concept .
+Network
+Visio  provides updated Network templates and shapes. Basic Network drawings can be used in presentations, proposals, and conceptual layouts. Meanwhile, Detailed Network drawings can be used for creating more complex, elaborate diagrams, including actual network configurations. The new Rack Diagram drawing provides rack and cabinet shapes, as well as rack component and Room shapes, for drawing accurate representations of network server room configurations. Rack components snap to industry-specific sizes, and snap to the rack and cabinet shapes for easy creation of rack diagrams. The three directory services templates can be used to design new directories, create alternative designs for existing directories, or create plans for updating or migrating a current network's directory service .
+Process Engineering
+Visio Process Engineering diagrams include two templates: one for Piping and Instrumentation diagrams, and one for Process Flow diagrams. These diagram types are used by manufacturing, control engineers, and mechanical and electrical engineers for purposes of documenting manufacturing processes and related equipment, controls, and instrumentation .
+Software
+Visio supports a number of Software diagrams including Unified Modeling Language (UML). UML is a system of notation for how concepts, automated processes, human interactions, and associations can be represented. Standard notation for communicating design ideas by defining various human and program activities enable clearer communication of design principles in software development.
+Web diagram
+Visio provides Web diagramming capabilities, including the ability to choose from a variety of text display options for site map links. It also includes the ability to substitute custom shapes, and an auto-discovery capability for links .
+
+1.4.4 Visio and auto code generation.
+Even Interfaces same in standard and Enterprise Architects editions their features are differ. Enterprise Architects editions supports to developers to generate code form UML diagrams but standard edition doesn’t support. And Enterprise Architects editions only affordable for premium users so normal users can’t afford it. So they have to face problem when they want to access that facility.
+Advantages of having code-generation facility with MS Visio
+1. All most all code generation tools and modeling tools are separated ones, but Visio provide both jobs as one services.
+2. Some code generation tool don’t support for all modeling tools’ output. Visio doesn’t have that problem, after drawing UML diagrams developer can feed same file to generate the code.
+3. As modeling tool we can add more details to the UML diagrams (some open source modeling tools don’t support) so developer can get more detailed output.
+
+
+
+
+
+
+1.5 Scope of the Project.
+The main objective of the new system is to increase effectiveness of the current system, and consumes lesser time to complete an initial coding part. The new system get the UML class diagram as input and generate classes’ main functions and attributes, but this will not produce logic part of the software application but it really helpful for developers to reduce the development time and give more time to think about logic of that application.
+This system also provides reverse process also, for example if developers change class names or functions names then that application not tallies with the previous UML class Diagram. So this application provide XML file for new UML class diagram and that can read from Microsoft Visio.
+I divided this Auto code generation tool to two main parts that are 	
+1). Develop code generation tool. 
+2).Connect that tool to Microsoft Visio.
+
+Code generation tool.
+Input files contain specifications of some sort conforming to the syntax of XML. The XML parser, which could be hand written or generated by some tool, parses the in put language documents and constructs the input language syntax tree. Tree constructing parsers parse the input document in order to construct the tree (Programming Language Ex. java), and hand it over for further processing .The writer operates on the output language syntax tree to produce the output language document and write it to the file system [7].
+
+
+Connect that tool to Microsoft Visio.
+
+  Connect   code generating tool to MS Visio to get the Input XML file to the tool    
+
+Microsoft provides several ways for developers who use Automation in their custom solutions to extend Visio, such as:
+    * Creating Visio add-ons. Visio add-ons have been supported since Visio 2.0 and can be implemented in one of two ways: in a Visio library (.vsl) file, which is a form of dynamic link library (DLL) that is specific to Visio, or in a stand-alone executable program (.exe file) [5].
+    * Creating Component Object Model (COM) add-ins. Visio 2007 includes support for COM add-ins. Because most 2007 Microsoft Office system applications support the COM add-in architecture, you can use the same tools and installation file formats to develop add-ins for all of your Office applications, including Visio [5].
+    * Using Microsoft Visual Basic for Applications (VBA) code. VBA code is stored with a Visio document, and you can create VBA solutions in the Visual Basic Editor environment that is part of Visio [5].
+
+Visio Add-Ons
+The term add-on is extending the Visio programmatically. 
+A Visio add-on is a user-written program that is one of two file types:
+    * A .vsl file, which is a standard Windows DLL that has a prescribed Visio entry point [5].
+    * An .exe file, which is a stand-alone executable program [5].
+
+
+1.5.1 Aims and Objective
+Provide executable application to developer
+The system must be capable to provide executable application (including main function and variables) to developer after generating the code.
+
+ Quality
+The output code to be at least as good as what developer would have written by hand and also code that is easy to read and debug .Bugs found in the output code can be fixed in the template. Code can then be re-generated to fix that bug across the board.
+
+Consistency: 
+The code should use reliable class, method, and argument names. This is also an area where generators do extremely well.
+
+Productivity:
+ It should faster to generate the code than to write it by hand. This is the first benefit that most developers think of when it comes to generation. And it must be possible to re-generate the code base to match changing requirements; at this point developer will blow the hand-coding process out of the water in terms of productivity.
+
+1.5.2 Weakness of the current system
+
+Designing UML diagram and coding are two separate phases in the current software development Process. So it will create some problems when start to code the system.
+
+The period between the design concept realized by the system team and the code written by the software team is much longer, so it will take more time to start the coding.
+
+ And also includes various intermediary specification documentation and reviews. This process was getting more and more delayed as many loops were observed during new product development. To limit the overall development time, system designers were required to freeze the concept quite early, missing some critical points that would come later in the development process. To allow more flexibility between design and coding, model-based design and rapid prototyping have been introduced.
+
+If design change while doing the coding part then developer has to redevelop the specification start at the beginning. 
+
+Developer has to wait few days to get executable application .if number of developers working together they are doing different parts of the application so it’s not possible to get the executable application at the initial stage. 
+
+For commercial application the time period for complete the project is fixed, so they’ll get lesser time to do the testing and debugging because they have to spend more time to initial changes of the project ect…
+
+Some parts of the application have to code repeatedly. For example some variable names function ect… its also waste the time.
+
+We can’t assure that every programmer follow the same coding convention because different developers different coding standard. so final product may be mix of those coding standards
+
+1.5.3 Advantages of proposed System
+
+The concept of generating embedded software code directly from a software model is attractive and there are many benefits which a code generator could bring to the development process. The main advantages of the model-based code generation approach can be summed up as follows.
+Keeping the code and models linked .This is important because in most instances when the code is done manually the design is left behind and not updated .in a way this is a difficult and redundant issue because the developer has to first make a modification to the design and then make the same change to the code. For example or add new function to a UML diagram, the user would add it to the diagram first, and then add it to the code. When using an auto code generation tool, the user would add it in the design and the code would automatically be generated correctly for the updated design [7]. 
+Improve traceability, since the code is generated directly from the design which makes it easy to maintain the traceability between the design and code
+Using this step instead of the regular development process, engineers can test their system in a real environment much faster.
+Rapid prototype is possible early [7].
+Programmers are free to concentrate on the others areas of development rather than repeating same type of chunk code (which increase the productivity). 
+A single developer can work in design, coding, deployment and testing and move quickly between each process.
+Code mentor (as the generated code is well written and 100% consistent, programmers are more likely to copy the style of this code and learn from it than they would a dusty old standards document. So all project code is more likely to be consistent and very clear, despite being produced at an incredibly rapid rate [12].
+
+1.6 Software Requirement Specification
+
+Functional Requirements
+ID
+Description
+1
+
+Shall be able to generate classes’ main functions and some attributes.
+2
+Shall be able to do the backward process also, if code change (then it is not compatible with given UML diagram) so it must provide the updated UML diagram.
+3
+The code it generates shall be ready to use.
+4
+Shall be able to eliminate additional human ‘check’ in development process.
+5
+Shall be able to provide output with out any system make errors.
+6
+Shall be able to produce quality code.
+7
+Shall be able to provide well-structured, documented and traceable to the specification
+8
+It shall build that majority of the grunt work code.
+
+
+
+
+
+Non-functional Requirements
+ID
+Description
+1
+Shall be able to provide friendly user interface.
+2
+Shall run on Microsoft Windows XP or later MS operating Systems
+3
+ It shall be easy to use.
+4
+It should be support several programming languages
+5
+It should be compatible with newer versions of Microsoft Visio applications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.7 Diagrams
+1.7.1 Use case diagram for proposed system.
+
+
+
+
+
+Architecture	<<include>>
+
+
+											
+
+	<<include>>	Code Generator
+
+
+	<<include>>
+
+
+
+
+
+
+
+
+
+1.7.2 Use case Descriptions.
+Use case: 1
+Name:  Draw UML diagrams
+Actor:  Architecture
+Pre Condition: Business problem should be proper analyzed.
+
+Description :   System Architecture draw the UML diagram      
+                      Using MS Visio.
+Post Condition: Save UML diagram in XML format.     
+
+Use case: 2
+Name:  Read XML file
+Actor:  Code Generator
+Pre Condition: XML format of UML diagram should be provided
+
+Description :   the tool read XML file and construct the DOM tree
+                      For given XML file.
+
+
+Use case: 3
+Name:  Generate code
+Actor:  Code Generator
+Pre Condition: XML format of UML diagram should be provided
+
+Description:   constructs the language syntax tree.
+                    Write code into text file 
+Use case: 4
+Name:  Generate XML 
+Actor:  Code Generator
+Pre Condition: Updated Code should be provided
+
+Description: Generate the new xml file for class diagram that     
+                      Compatible with Updated code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.7.3 Activity Diagram
+Architecture
+Tool
+
+
+
+
+References
+  [1].Ian Sommerville, 6th Edition ,Software Engineering .
+  [2].Soumen Sarkar and Craig Cleaveland, Code Generation Using XML Based Document transfomation
+<http://www.cs.uct.ac.za/mit_notes_devel/SE/Latest/html/ch02s07.html>
+  [3] Computer Science – Theory, Marion Schumacher, 06/02/2010
+<.http://www.grin.com/e-book/106034/the-use-of-ssadm-structured-systems-analysis-and-design-methodology-as>
+ [4] International Journal of Business Research, March, 2008 by Kenneth Pefkaros,07/02/2010
+<http://findarticles.com/p/articles/mi_6773/is_2_8/ai_n31126769/>
+ [5] msdn, Office Developer center , Microsoft Co.  , 08/02/2010
+<http://msdn.microsoft.com/en-us/library/bb851468.aspx>
+ [6] Cosateq GmbH & Co.KG,Auto code Generation ,07/02/2009,
+< http://www.precisionmba.com/automatic_code_generation.htm>
+ [7]Automatic Code Generation (Model-based Implementation),12/01/2010
+<http://ichmaschine.de/autocode.html	>
+ [8]Microsoft office Visio, Microsoft Co. ,07/02/2010
+<http://www.microsoft.com/smallbusiness/products/visio/features.mspx>
+ [9] Methodologies and the SSADM methodology, MSc-IT Study Material July 2007 Edition
+       Computer Science Department, University of Cape Town, 07/02/2010
+<http://www.cs.uct.ac.za/mit_notes_devel/SE/Latest/html/ch02s07.html>
+ [10] Advantages and disadvantages of SSADM, Wiki Answers, 08/02/2010
+
+<http://wiki.answers.com/Q/What_are_the_advantages_and_disadvantages_of_ssadm>
+  [11]MS Visio, Wikipedia, the free encyclopedia, 07/02/2010
+<http://en.wikipedia.org/wiki/Microsoft_Visio>
+ [12]Automated Code Generation,Software reality,06/02/2010
+< http://www.softwarereality.com/programming/code_generation5.jsp>
